@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MusicRanker.com</title>
+    <link rel="icon" href="images/MR2.png">
+    <style>
+        body {
+            background-image: url("https://mcdn.wallpapersafari.com/medium/90/93/vh3Knp.jpg");
+        }
+
+        h1 {
+            color: aliceblue;
+        }
+
+        h2 {
+            color: aliceblue;
+        }
+        a {
+            color: white;
+            font-size: large;
+            margin: 3px;
+        }
+
+        .wrapper {
+            display: grid;
+            width: 100%;
+            margin: auto;
+            grid-template-columns: 2fr 5fr 5fr 2fr;
+            grid-template-rows: 200px 50px 50px 200px;
+            grid-template-areas: "leftlogo leftlogo nav nav"
+                                 "leftlogo leftlogo nav nav"
+                                 " . mainlogo mainlogo ."
+                                 " . . . .";
+        }
+
+        .mainlogo {
+            grid-area: mainlogo;
+        }
+
+        .leftlogo {
+            grid-area: leftlogo;
+        }
+
+        .nav {
+            grid-area: nav;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="leftlogo">
+        <img src="images/LEFTLOGO.png" width="150" height="100">
+    </div>
+    <div class="mainlogo">
+        <img src="images/MRMR.png" width="1000">
+    </div>
+    <div class="nav">
+        <nav>
+            <label class="logo"> </label>
+            <ul>
+                <a href="Top%2010%20Albums%20of%20The%20Year.html">Top 5 Albums of The Year</a>
+                <a href="Top%2010%20Albums%20of%20The%20Decade.html">Top 5 Albums of The Decade</a>
+                <a href="Top%2010%20Songs%20of%20The%20Year.html">Top 5 Songs of The Year</a>
+                <a href="About.html">About</a>
+
+            </ul>
+        </nav>
+    </div>
+</div>
+
+</body>
+</html>
